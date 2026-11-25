@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="module" src="https://pyscript.net/releases/2026.7.2/core.js"></script>
+
+    <style>
+        html {
+            font-size: 5cqi;
+        }
+
+        #output {
+            font-size: 2cqi;
+        }
+
+
+        #things {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5cqi;
+
+
+
+
+        }
+
+
+        * {
+
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #background {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url("The\ elden\ Background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #d1af52;
+            min-height: 100vh;
+            width: 100%;
+            font-family: "the elden font";
+            text-shadow: 0cqi 0cqi 0.9cqi black
+        }
+
+        a:hover {
+            cursor: pointer;
+
+            text-shadow: 0cqi 0cqi 2cqi rgb(255, 235, 122)
+        }
+
+        a {
+            all: unset
+        }
+
+        @font-face {
+            font-family: "the elden font";
+            src: url("fontain/the\ elden\ font.otf");
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="py" src="main.py"></script>
+
+    <div id="background">
+        <h1>Classes and Stats
+        </h1>
+
+        <div id="things">
+            <input type="text" id="input" placeholder="Enter Class">
+
+            <button py-click="find">find</button>
+
+            <div id="output">Try Vagabond</div>
+            <ul>
+
+
+                <a href="index.html">exit</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
